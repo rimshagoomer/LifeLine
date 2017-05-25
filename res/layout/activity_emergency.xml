@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scrollView"
+    android:layout_toEndOf="@+id/selfCB"
+    android:layout_alignParentTop="true"
+    android:fillViewport="true">
+
+
+    <LinearLayout  android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context="com.example.pc.lifelineuser.Emergency"
+        android:id="@+id/emergency_act"
+        android:scrollIndicators="top|bottom"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Select medical condition..."
+            android:id="@+id/medicalconditionTV"
+            android:textSize="22dip"
+            android:layout_below="@+id/imageView2"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentStart="true" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/emergencyGroup"
+            android:layout_below="@+id/medicalconditionTV"
+            android:layout_alignParentStart="true">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trauma (Accident)"
+                android:id="@+id/traumaCB"
+                android:checked="false"
+                android:textSize="20dip"
+                android:paddingBottom="10dip"
+                android:layout_below="@+id/medicalconditionTV"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="center_vertical"
+                android:textAlignment="center"
+                android:textColor="#919191" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Heart Attack"
+                android:id="@+id/heartattackCB"
+                android:layout_below="@+id/traumaCB"
+                android:layout_alignParentStart="true"
+                android:checked="false"
+                android:textSize="20dip"
+                android:paddingBottom="10dip"
+                android:textColor="#919191"
+                android:layout_gravity="center_vertical"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Respiratory Problem"
+                android:id="@+id/respiratoryCB"
+                android:layout_below="@+id/heartattackCB"
+                android:layout_alignParentStart="true"
+                android:checked="false"
+                android:textSize="20dip"
+                android:paddingBottom="10dip"
+                android:textColor="#919191"
+                android:layout_gravity="center_vertical"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Abdominal Pain"
+                android:id="@+id/abdominalCB"
+                android:layout_below="@+id/respiratoryCB"
+                android:layout_alignParentStart="true"
+                android:checked="false"
+                android:textSize="20dip"
+                android:paddingBottom="10dip"
+                android:textColor="#919191"
+                android:layout_gravity="center_vertical"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Labour pain"
+                android:id="@+id/labourpainCB"
+                android:layout_below="@+id/abdominalCB"
+                android:layout_alignParentStart="true"
+                android:checked="false"
+                android:textSize="20dip"
+                android:paddingBottom="10dip"
+                android:textColor="#919191"
+                android:layout_gravity="center_vertical"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mental illness"
+                android:id="@+id/mentalCB"
+                android:layout_below="@+id/labourpainCB"
+                android:layout_alignParentStart="true"
+                android:checked="false"
+                android:textSize="20dip"
+                android:paddingBottom="10dip"
+                android:textColor="#919191"
+                android:layout_gravity="center_vertical"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Others"
+                android:id="@+id/othersCB"
+                android:layout_below="@+id/mentalCB"
+                android:layout_alignParentStart="true"
+                android:checked="false"
+                android:textSize="20dip"
+                android:paddingBottom="10dip"
+                android:textColor="#919191"
+                android:layout_gravity="center_vertical"
+                android:textAlignment="center" />
+
+        </RadioGroup>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Booking for..."
+            android:id="@+id/bookingforTV"
+            android:textSize="22dip"
+            android:layout_below="@+id/emergencyGroup"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="30dp" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bookingGroup"
+            android:layout_below="@+id/bookingforTV"
+            android:layout_alignParentStart="true">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Self"
+                android:id="@+id/selfCB"
+                android:layout_below="@+id/bookingforTV"
+                android:layout_alignStart="@+id/bookingforTV"
+                android:checked="true"
+                android:textSize="20dip"
+                android:textColor="#919191"
+                android:layout_gravity="center_vertical"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Others"
+                android:id="@+id/otherbookingCB"
+                android:layout_below="@+id/selfCB"
+                android:layout_alignStart="@+id/selfCB"
+                android:checked="false"
+                android:textSize="20dip"
+                android:textColor="#919191"
+                android:layout_gravity="center_vertical"
+                android:textAlignment="center" />
+
+        </RadioGroup>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:id="@+id/mapB"
+            android:layout_alignParentBottom="true"
+            android:layout_alignEnd="@+id/emergencyGroup"
+            android:background="@drawable/booknow"
+            android:clickable="true"
+            android:onClick="toMaps"
+            android:layout_marginTop="20dp"
+            android:textColor="#ffffff" />
+
+
+    </LinearLayout>
+</ScrollView>
