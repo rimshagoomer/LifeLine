@@ -9,4 +9,5 @@ The application incorporates:
 - One-Time-Password for Authentication
 - Server and Database Connectivity in PHP 
 
-The source files can be found in the folder lifelineuser.
+The end user application can be found in the folder lifelineuser.
+The driver application can be found in the folder lifelineuser.
