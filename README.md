@@ -8,3 +8,5 @@ The application incorporates:
 - Google Notifications, 
 - One-Time-Password for Authentication
 - Server and Database Connectivity in PHP 
+
+The source files can be found in the folder lifelineuser.
