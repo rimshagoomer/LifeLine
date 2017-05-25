@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scrollView5"
+
+    android:fillViewport="true">
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/horizontalScrollView"
+        android:fillViewport="true"
+        >
+
+
+        <RelativeLayout  android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            tools:context="com.example.pc.lifeline_user.Signup"
+            android:isScrollContainer="false"
+            >
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:id="@+id/imageView2"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Signup"
+                android:id="@+id/SignupTV"
+                android:layout_below="@id/imageView2"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:textSize="35dip"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/nameT"
+                android:hint="Full Name"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/SignupTV"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="20dp" />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/numberT"
+                android:hint="Contact Number"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/emailT"
+                android:gravity="center_horizontal" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/emailT"
+                android:hint="Email"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/nameT"
+                android:gravity="center_horizontal" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/passT"
+                android:hint="Password"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/numberT"
+                android:gravity="center_horizontal" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/cpassT"
+                android:hint="Confrim Password"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/passT"
+                android:gravity="center_horizontal" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/econtact1T"
+                android:hint="Ambulance Number"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/cpassT"
+                android:gravity="center_horizontal" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/econtact2T"
+                android:hint="Driving License Number"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/econtact1T"
+                android:gravity="center_horizontal" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/hosp1T"
+                android:hint="Hospital ID"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/econtact2T"
+                android:gravity="center_horizontal" />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Register"
+                android:id="@+id/otpB"
+                android:clickable="true"
+                android:onClick="onOtpClick"
+                android:layout_below="@+id/hosp1T"
+                android:background="@drawable/booknow"
+                android:layout_marginTop="20dp"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/loginhere"
+                android:id="@+id/textView"
+                android:onClick="onLoginClick"
+                android:clickable="true"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/otpB"
+                android:textColor="#2078ff" />
+
+        </RelativeLayout>
+    </HorizontalScrollView>
+</ScrollView>
