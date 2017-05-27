@@ -11,3 +11,6 @@ The application incorporates:
 
 The end user application can be found in the folder lifelineuser.
 The driver application can be found in the folder lifelineuser.
+
+# IDE used
+Android Studio
